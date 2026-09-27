@@ -2150,8 +2150,8 @@ impl<'a> TextArea<'a> {
         self.mask
     }
 
-    /// Set the style of cursor. By default, a cursor is rendered in the reversed color. Setting the same style as
-    /// cursor line hides a cursor.
+    /// Set the style of the cursor. Only background color is meaningful. By default, the cursor is rendered in the
+    /// reversed color. Setting the same background color as in the cursor line style hides the cursor.
     /// ```
     /// use ratatui_core::style::{Style, Color};
     /// use ratatui_textarea::TextArea;
